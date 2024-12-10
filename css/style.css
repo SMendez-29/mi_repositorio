@@ -1,0 +1,103 @@
+selector {
+
+    transition-property: valor;
+}
+
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*FONTS FACE uso de tipografia descargada (falta)*/
+
+/*CSS BODY*/
+
+
+
+/* HERENCIA al aplicarla en la etiqueta body afecta a todos los elementos de todos los html */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+/*CSS HEADER*/
+
+header.fondoheader {
+    background-color: #2cedbe24;
+}
+
+ul {
+    list-style: none;/* saca bullets de lista */
+}
+
+/* aplica a todos los enlaces dentro de items de lista */
+li>a{
+    color: black; /* saca color por default de enlace */
+    text-decoration: none; /* saca subrayado por default enlaces */
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+/*CSS TouStore.TENDENCIAS*/
+
+.h1tendencias {
+    text-align: center;
+}
+
+h1 {
+    color: #6d19db;
+    padding: 20px;
+    margin: 25px;
+}
+
+
+
+
+/*CSS Comunicate con TouStore*/
+
+.h2comunicate {
+    text-align: center;
+}
+
+/* cards con flex box model y position absolute */
+.orden_card_categorias{
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoria_card {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+  }
+  
+  .categoria_card p {
+    flex-grow: 1;
+  }
+  
+  .categoria_card img {
+    width: 100%;
+  }
